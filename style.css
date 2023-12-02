@@ -132,11 +132,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition-duration: 0.3s;
-  }
+   }
 
-  .container #roblox:hover {
+   .container #roblox:hover {
     font-size: 55px;
   }
+
 
   .container #twitter {
     color: white;
