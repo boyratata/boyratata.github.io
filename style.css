@@ -124,7 +124,7 @@
     100% { transform: rotate( 0.0deg) }
   }
   
-  .container #roblox {
+  .container #tiktok {
     color: white;
     font-size: 45px;
     position: absolute;
@@ -134,7 +134,7 @@
     transition-duration: 0.3s;
    }
 
-   .container #roblox:hover {
+   .container #tiktok:hover {
     font-size: 55px;
   }
 
