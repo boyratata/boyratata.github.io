@@ -195,6 +195,14 @@
     font-size: 55px;
   }
 
+  .glass #welcome-text {
+    font-size: 18px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.3s;
+    margin-top: 10px;
+  }
+
   .glass {
     position: absolute;
     top: 50%;
