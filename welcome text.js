@@ -1,9 +1,18 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the notification element
+    var notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.id = 'notification';
+    notification.innerHTML = 'welcome to my about/bio';
 
-function showWelcomeText() {
-    var welcomeText = document.createElement("div");
-    welcomeText.id = "welcome-text";
-    welcomeText.textContent = "welcome to my well about or bio!";
-    document.querySelector(".glass").appendChild(welcomeText);
-}
+    // Append the notification to the body
+    document.body.appendChild(notification);
 
-showWelcomeText();
+    // Show the notification
+    notification.classList.add('show');
+
+    // Optional: Close the notification after a few seconds
+    setTimeout(function() {
+        notification.classList.remove('show');
+    }, 5000); // Adjust the time as needed
+});
