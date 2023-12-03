@@ -28,7 +28,7 @@
           class="pfp"
           src="https://i.imgur.com/JwfNZyA.jpg"
         />
-          <h1 data-value="clowmeme">clownmeme</h1>
+          <h1 data-value="clownmeme">clowmeme</h1>
           <script src="./js/text.js"></script>
         <p class="under-txt" style="margin-bottom: 5"> i like foot.</p>
         <p id="discord-status"></p>
@@ -56,7 +56,7 @@
           <a href="NO_BALLS NI_ce" class="grey-link"
             ><i class="fa-brands fa-steam"></i
           ></a>
-
+          
         </div>
       </div>
     </div>
