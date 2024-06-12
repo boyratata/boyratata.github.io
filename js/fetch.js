@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#426098" />
-    <meta name="title" content="boyratata.github.io" />
+    <meta name="title" content="SUCK MY COCK" />
     <meta name="description" content="my bio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>clownmeme | bio</title>
