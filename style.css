@@ -1,75 +1,70 @@
-:root{
-    --white: rgb(248, 255, 181);
-    --blue: rgb(153, 227, 253);
-    --pink: rgb(255, 157, 247);
+:root {
+  --white: rgb(248, 255, 181);
+  --blue: rgb(153, 227, 253);
+  --pink: rgb(255, 157, 247);
 }
 
-body{
-    background-color: #111;
-    font-family: 'Google Sans', sans-serif;
-    color: #fff;
-    display: fixed;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    background:url(assets/wall.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    
+body {
+  background-color: #111;
+  font-family: 'Google Sans', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background: url(assets/wall.png) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
 .overlay-content {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 30px;
-    text-align: center;
-    color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  text-align: center;
+  color: white;
 }
 
 .overlay-content p {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .overlay-content button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .overlay-content button:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: white; /* Change text color on hover */
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
 .top-right {
@@ -79,10 +74,9 @@ body{
 }
 
 .button {
-	/* From https://css.glass */
-  background: rgba(255, 255, 255, 0.17); /* Glassmorphism background */
-  color: rgb(199, 197, 197); /* Grey color for the text */
-  border: 1px solid rgba(255, 255, 255, 0.7); /* Match existing border style */
+  background: rgba(255, 255, 255, 0.17);
+  color: rgb(199, 197, 197);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -90,40 +84,40 @@ body{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 16px; /* More rounded corners */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-  backdrop-filter: blur(7.1px); /* Blur effect */
-  -webkit-backdrop-filter: blur(7.1px); /* Blur effect for Safari */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque background on hover */
-  color: white; /* White text on hover */
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
 }
 
-.margin-content{
-    margin-top: 0vh;
+.margin-content {
+  margin-top: 0vh;
 }
 
-.gradient-txt{
-    color: transparent;
-    font-size: 3rem;
-    margin-bottom: 0;
+.gradient-txt {
+  color: transparent;
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
-.under-txt{
-    font-size: 20px;
-    margin: 0;
+.under-txt {
+  font-size: 20px;
+  margin: 0;
 }
 
-.pfp{
-    border-radius: 10px;
-    width: 95px;
-    height: 95px;
+.pfp {
+  border-radius: 10px;
+  width: 95px;
+  height: 95px;
 }
 
-.grey-link{
+.grey-link {
   font-size: 20px;
   padding: 3px;
   color: rgb(199, 197, 197);
@@ -131,89 +125,74 @@ body{
   background-color: transparent;
 }
 
-.grey-link:hover{
+.grey-link:hover {
   color: white;
   background-color: transparent;
 }
 
 .box {
-    /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 80px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 0px 0px 15px 5px rgb(255, 255, 255);
-    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.75);
-    overflow: auto;
-    width: 300px;
-  }
-
-@media (max-width: 400px){
-    .box{
-        padding: 30px;
-    }
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 80px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow: auto;
+  width: 300px;
 }
 
-.inf{
-    bottom: 0;
-    position: absolute;
-    width: 100%;
+@media (max-width: 400px) {
+  .box {
+    padding: 30px;
+  }
 }
-  
-  @keyframes background-pan {
-    from {
-      background-position: 0% center;
-    }
-    
-    to {
-      background-position: -200% center;
-    }
+
+.inf {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
   }
-  
-  @keyframes scale {
-    from, to {
-      transform: scale(0);
-    }
-    
-    50% {
-      transform: scale(1);
-    }
+  to {
+    background-position: -200% center;
   }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    
-    to {
-      transform: rotate(180deg);
-    }
+}
+
+@keyframes scale {
+  from,
+  to {
+    transform: scale(0);
   }
-  
-  body {
-    background-color: rgb(10, 10, 10);
-    display: grid;
-    height: 100vh;
-    margin: 0px;
-    overflow: hidden;
-    place-items: center;
+  50% {
+    transform: scale(1);
   }
-  
-  h1 {
-    color: white;
-    font-size: 3rem;
-    font-family: 'Google Sans', monospace;
-    margin: 0px;
-    text-align: center;
-    white-space: nowrap;
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
-    background: linear-gradient(to right, var(--white), var(--blue), var(--pink), var(--white));
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: background-pan 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Google Sans', monospace;
+  margin: 0px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  background: linear-gradient(to right, var(--white), var(--blue), var(--pink), var(--white));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 3s linear infinite;
+}
