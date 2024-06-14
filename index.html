@@ -47,5 +47,23 @@
     <script type="module">
         import { status, pfp } from './js/fetch.js';
     </script>
+
+    <audio id="background-audio" src="https://raw.githubusercontent.com/boyratata/boyratata.github.io/main/assets/audio.mp3" preload="auto"></audio>
+
+    <button onclick="playAudio()">Play Audio</button>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('background-audio');
+            audio.play();
+        }
+        
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(function(error) {
+                console.log("Autoplay was prevented. User interaction is required.");
+            });
+        });
+    </script>
 </body>
 </html>
