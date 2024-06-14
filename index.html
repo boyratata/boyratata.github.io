@@ -11,8 +11,15 @@
     <title>admin0_ | bio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="./favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,600,700" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/cf16def632.js" crossorigin="anonymous" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,600,700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cf16def632.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
     <div class="top-right">
@@ -20,20 +27,19 @@
     </div>
     <div class="margin-content">
       <div class="box">
-        <img class="pfp" src="https://i.imgur.com/dd0SEFr.png" />
+        <img
+          class="pfp"
+          src="https://i.imgur.com/dd0SEFr.png"
+        />
         <h1 data-value="admin0_">admin0_</h1>
         <script src="./js/text.js"></script>
         <p class="under-txt" style="margin-bottom: 5">i got no balls no dick and no bitches.</p>
         <p id="discord-status"></p>
         <div class="links">
-          <a href="https://open.spotify.com/user/31mhauf6rsh7xyrfdpmhjvjg3udq" class="grey-link"
-            ><i class="fa-brands fa-spotify"></i
-          ></a>
+          <a href="https://open.spotify.com/user/31mhauf6rsh7xyrfdpmhjvjg3udq" class="grey-link"><i class="fa-brands fa-spotify"></i></a>
           <a href="https://github.com/boyratata" class="grey-link"><i class="fa-brands fa-github"></i></a>
           <a href="https://twitter.com/KaraokeYuki" class="grey-link"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.youtube.com/channel/UCcZyY3b9iWqJuH2rMyTVpfw" class="grey-link"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
+          <a href="https://www.youtube.com/channel/UCcZyY3b9iWqJuH2rMyTVpfw" class="grey-link"><i class="fa-brands fa-youtube"></i></a>
           <a href="https://www.tiktok.com/@admin0_02" class="grey-link"><i class="fa-brands fa-tiktok"></i></a>
           <a href="https://discord.com/users/1218777412364406906" class="grey-link"><i class="fa-brands fa-discord"></i></a>
         </div>
@@ -44,21 +50,5 @@
     <script type="module">
       import { status, pfp } from './js/fetch.js';
     </script>
-    <script>
-      document.getElementById('continue-button').onclick = function() {
-        document.getElementById('overlay').style.display = 'none';
-        var audio = new Audio('https://boyratata.github.io/boyratata.github.io/assets/audio.mp3');
-        audio.loop = true;
-        audio.play().catch(function(error) {
-          console.error('Failed to play audio:', error);
-        });
-      };
-    </script>
-    <div class="overlay" id="overlay">
-      <div class="overlay-content">
-        <p>Welcome to the site!</p>
-        <button id="continue-button">Continue</button>
-      </div>
-    </div>
   </body>
 </html>
