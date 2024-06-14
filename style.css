@@ -109,7 +109,7 @@ body {
     background-position: 0% center;
   }
   to {
-    background-position: -200% center;
+    background-position: 200% center;
   }
 }
 
@@ -136,7 +136,7 @@ h1 {
   color: white;
   font-size: 3rem;
   font-family: 'Google Sans', monospace;
-  margin: 0px;
+  margin: 0;
   text-align: center;
   white-space: nowrap;
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
