@@ -1,3 +1,4 @@
+/* Existing styles */
 :root {
   --white: rgb(248, 255, 181);
   --blue: rgb(153, 227, 253);
@@ -151,4 +152,39 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: background-pan 3s linear infinite;
+}
+
+/* New styles for the welcome screen */
+.welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.welcome-message {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+  border: 1px solid rgba(255, 255, 255, 0.49);
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-message h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.welcome-message .button {
+  padding: 10px 20px;
 }

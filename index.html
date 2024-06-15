@@ -10,6 +10,13 @@
     <script src="https://kit.fontawesome.com/cf16def632.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-message">
+            <h1>Welcome to the server</h1>
+            <button id="continue-button" class="button">Continue</button>
+        </div>
+    </div>
+
     <div class="top-right">
         <a href="https://boyratata.github.io/icon.github.io/" class="button">bio reborn</a>
     </div>
@@ -37,5 +44,10 @@
     </script>
 
     <audio id="audio" src="https://raw.githubusercontent.com/boyratata/boyratata.github.io/main/assets/audio.mp3" autoplay loop></audio>
+    <script>
+        document.getElementById('continue-button').addEventListener('click', function() {
+            document.getElementById('welcome-screen').style.display = 'none';
+        });
+    </script>
 </body>
 </html>
