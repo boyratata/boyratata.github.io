@@ -25,7 +25,6 @@
             <div class="box">
                 <img class="pfp" src="https://i.imgur.com/dd0SEFr.png" />
                 <h1 data-value="admin0_">admin0_</h1>
-                <script src="./js/text.js"></script>
                 <p class="under-txt">i got no balls no dick and no bitches.</p>
                 <p id="discord-status"></p>
                 <div class="links">
@@ -43,25 +42,18 @@
     </div>
 
     <script type="module" src="./js/fetch.js"></script>
-    <script type="module">
-        import { status, pfp } from './js/fetch.js';
-    </script>
-
+    <script src="./js/text.js"></script>
     <script>
-        document.getElementById('continue-button').addEventListener('click', function() {
+        document.getElementById('continue-button').onclick = function() {
             document.getElementById('welcome-overlay').style.display = 'none';
-            document.querySelector('.main-content').classList.remove('blur');
-            document.getElementById('audio').play();
-        });
-
-        // Ensure audio plays when the page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('audio');
+            var audio = new Audio('https://raw.githubusercontent.com/boyratata/boyratata.github.io/main/assets/audio.mp3');
+            audio.loop = true;
             audio.play().catch(function(error) {
-                // Audio play failed, possibly due to autoplay restrictions
-                console.log('Audio play failed:', error);
+                console.error('Failed to play audio:', error);
             });
-        });
+
+            document.querySelector('.main-content').classList.remove('blur');
+        };
     </script>
 </body>
 </html>
