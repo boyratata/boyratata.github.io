@@ -216,3 +216,7 @@ h1 {
 .main-content.blur {
   filter: blur(8px);
 }
+
+.main-content {
+  transition: filter 0.3s ease; /* Add transition for smoother effect */
+}
