@@ -13,40 +13,44 @@
     <div id="welcome-screen" class="welcome-screen">
         <div class="welcome-message">
             <h1>Welcome to the server</h1>
-            <button id="continue-button" class="button">Continue</button>
+            <button id="continue-button" class="button">OK</button>
         </div>
     </div>
 
-    <div class="top-right">
-        <a href="https://boyratata.github.io/icon.github.io/" class="button">bio reborn</a>
-    </div>
-    <div class="margin-content">
-        <div class="box">
-            <img class="pfp" src="https://i.imgur.com/dd0SEFr.png" />
-            <h1 data-value="admin0_">admin0_</h1>
-            <script src="./js/text.js"></script>
-            <p class="under-txt">i got no balls no dick and no bitches.</p>
-            <p id="discord-status"></p>
-            <div class="links">
-                <a href="https://open.spotify.com/user/31mhauf6rsh7xyrfdpmhjvjg3udq" class="grey-link"><i class="fa-brands fa-spotify"></i></a>
-                <a href="https://github.com/boyratata" class="grey-link"><i class="fa-brands fa-github"></i></a>
-                <a href="https://twitter.com/KaraokeYuki" class="grey-link"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.youtube.com/channel/UCcZyY3b9iWqJuH2rMyTVpfw" class="grey-link"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@admin0_02" class="grey-link"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://discord.com/users/1218777412364406906" class="grey-link"><i class="fa-brands fa-discord"></i></a>
+    <div class="main-content">
+        <div class="top-right">
+            <a href="https://boyratata.github.io/icon.github.io/" class="button">bio reborn</a>
+        </div>
+        <div class="margin-content">
+            <div class="box">
+                <img class="pfp" src="https://i.imgur.com/dd0SEFr.png" />
+                <h1 data-value="admin0_">admin0_</h1>
+                <script src="./js/text.js"></script>
+                <p class="under-txt">i got no balls no dick and no bitches.</p>
+                <p id="discord-status"></p>
+                <div class="links">
+                    <a href="https://open.spotify.com/user/31mhauf6rsh7xyrfdpmhjvjg3udq" class="grey-link"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://github.com/boyratata" class="grey-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/KaraokeYuki" class="grey-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCcZyY3b9iWqJuH2rMyTVpfw" class="grey-link"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@admin0_02" class="grey-link"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://discord.com/users/1218777412364406906" class="grey-link"><i class="fa-brands fa-discord"></i></a>
+                </div>
             </div>
         </div>
+        <div class="inf"></div>
+        <audio id="audio" src="https://raw.githubusercontent.com/boyratata/boyratata.github.io/main/assets/audio.mp3" autoplay loop></audio>
     </div>
-    <div class="inf"></div>
+
     <script type="module" src="./js/fetch.js"></script>
     <script type="module">
         import { status, pfp } from './js/fetch.js';
     </script>
 
-    <audio id="audio" src="https://raw.githubusercontent.com/boyratata/boyratata.github.io/main/assets/audio.mp3" autoplay loop></audio>
     <script>
         document.getElementById('continue-button').addEventListener('click', function() {
             document.getElementById('welcome-screen').style.display = 'none';
+            document.querySelector('.main-content').classList.remove('blur');
         });
     </script>
 </body>

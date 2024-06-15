@@ -185,6 +185,6 @@ h1 {
   color: white;
 }
 
-.welcome-message .button {
-  padding: 10px 20px;
+.main-content.blur {
+  filter: blur(8px);
 }
